@@ -21,12 +21,6 @@ namespace Igor.Controllers
             return View();
         }
 
-        [Authorize]
-        public IActionResult HouseCams()
-        {
-            return View();
-        }
-
         [AllowAnonymous]
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.Client, NoStore = false)]
         public IActionResult Error()

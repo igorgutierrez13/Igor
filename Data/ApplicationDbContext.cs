@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Igor.Models;
 
 namespace Igor.Data
 {
@@ -12,5 +13,6 @@ namespace Igor.Data
 
         }
         public DbSet<Igor.Models.HouseCamsModel> HouseCamsModel { get; set; }
+        public DbSet<Igor.Models.ZipCoreViewModel> ZipCoreViewModel { get; set; }
     }
 }

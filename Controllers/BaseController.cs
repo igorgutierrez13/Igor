@@ -9,10 +9,13 @@ namespace Igor.Controllers
 {
     public class BaseController : Controller
     {
-        public ILogger<BaseController> _logger;
+        private ILogger<BaseController> _logger;
+
+        public ILogger<BaseController> Logger { get => _logger; set => _logger = value; }
+
         public BaseController(ILogger<HomeController> logger)
         {
-            _logger = logger;
+            Logger = logger;
         }
 
         public BaseController()

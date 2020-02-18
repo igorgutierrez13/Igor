@@ -3,10 +3,10 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Igor.Controllers
 {
-    public class HouseCamsController : Controller
+    public class HouseCamsController : BaseController
     {
         [Authorize]
-        public IActionResult HouseCamsIndex()
+        public IActionResult Index()
         {
             return View();
         }
